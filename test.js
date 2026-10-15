@@ -1,9 +1,9 @@
-let caramelo="dulce"
-let costo= 56
-let panes="salado"
-let costo_2= 65
-   const resultado()
-
 let zapatos= "beige"
-let blusa= "rosado"
-let pantalones= "jeansazul"
+let blusa= "verde"
+let pantalones= "beige"
+
+if (zapatos == blusa && zapatos != pantalones) {
+    console.log("Combinan!")
+} else {
+    console.log("No combinan")
+}
