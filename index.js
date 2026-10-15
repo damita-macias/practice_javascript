@@ -14,3 +14,6 @@ let bailarina= 15
 let mercadillo= 6
    const resultado_dos= (tacon_negro + tacon_burdeo + bailarina + mercadillo)
 console.log(resultado_dos)
+
+let computador="rosado"
+console.log(computador)
