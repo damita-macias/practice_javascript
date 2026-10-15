@@ -1,52 +1,16 @@
-let puntuacion = 10;      // Su valor puede cambiar después
-const nombreUsuario = "Ana"; // Su valor será siempre "Ana"
-var antiguo = "hola";
-
-// Declaración de variables
-let producto = "Laptop";
-const impuesto = 1.21;
-let precioBase = 800;
-
-// Operación con variables
-let precioFinal = precioBase * impuesto;
-
-// Mostrar el resultado en la consola
-console.log("El producto es:", producto);
-console.log("El precio final con impuesto es:", precioFinal);
-
-// Objeto complejo
-const usuario = {
-    id: 42,
-    nombre: "Valeria",
-    ubicacion: {
-        ciudad: "Madrid",
-        pais: "España"
-    },
-    intereses: ["Programación", "Diseño", "Fotografía"]
-};
-
-// Extrayendo variables (incluyendo anidación y renombrado)
-const { nombre, ubicacion: { ciudad }, intereses: [primerInteres] } = usuario;
-
-console.log(nombre);          // "Valeria"
-console.log(ciudad);          // "Madrid"
-console.log(primerInteres);   // "Programación"
-
-
-let edad=25
+let nombre="alexandra";
+let edad= 27;
+console.log(nombre)
 console.log(edad)
 
-let carros="azul"
-console.log(carros)
+let numero_primero= 24
+let numero_segundo= 50
+ const resultado= (numero_primero + numero_segundo)
+ console.log(resultado)
 
-let cumpleaños="julio"
-console.log(cumpleaños)
-
-let tacos="blancos"
-console.log(tacos)
-
-let noviembre="botas de cuero"
-console.log(noviembre)
-
-let diciembre="arbol de navidad"
-console.log(diciembre)
+let tacon_negro= 35
+let tacon_burdeo= 45
+let bailarina= 15
+let mercadillo= 6
+   const resultado_dos= (tacon_negro + tacon_burdeo + bailarina + mercadillo)
+console.log(resultado_dos)
