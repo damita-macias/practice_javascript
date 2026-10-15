@@ -17,3 +17,5 @@ console.log(resultado_dos)
 
 let computador="rosado"
 console.log(computador)
+
+let amigo= "darwin"
