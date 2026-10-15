@@ -31,3 +31,22 @@ const { nombre, ubicacion: { ciudad }, intereses: [primerInteres] } = usuario;
 console.log(nombre);          // "Valeria"
 console.log(ciudad);          // "Madrid"
 console.log(primerInteres);   // "Programación"
+
+
+let edad=25
+console.log(edad)
+
+let carros="azul"
+console.log(carros)
+
+let cumpleaños="julio"
+console.log(cumpleaños)
+
+let tacos="blancos"
+console.log(tacos)
+
+let noviembre="botas de cuero"
+console.log(noviembre)
+
+let diciembre="arbol de navidad"
+console.log(diciembre)
