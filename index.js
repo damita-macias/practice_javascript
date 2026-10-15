@@ -19,3 +19,4 @@ let computador="rosado"
 console.log(computador)
 
 let amigo= "darwin"
+console.log(amigo)
