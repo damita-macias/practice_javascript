@@ -1,12 +1,17 @@
 const prompt = require("prompt-sync")();
 
-const nota= 6
-if(nota <= 4){
-  console.log("suspenso")
-} else if (nota >= 5 && nota <= 6 ){
-  console.log("aprovado");
-} else if (nota >= 7 && nota >= 8){
-   console.log("notable");
-} else {
-  console.log("sobresaliente")
+
+
+let primer_numero = Number(prompt("dame un numero : "));
+let segundo_numero = Number(prompt("dame otro numero: "));
+let operacion = prompt("¿que operacion quieres realizar (-, +, *, /): ");
+
+if (operacion === "+"){
+    console.log("resultado", primer_numero + segundo_numero)
+} else if (operacion === "-"){
+    console.log("resultado", primer_numero - segundo_numero)
+} else if (operacion === "*"){
+    console.log("resultado", primer_numero * segundo_numero)
+} else if (operacion === "/"){
+    console.log("resultado", primer_numero / segundo_numero)
 }
