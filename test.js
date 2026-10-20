@@ -11,4 +11,10 @@ while (i < 3) {
     i++;
 }
 
+let cont = 1;
+ while(cont <= 100){
+    document.write(cont + " ");
+    cont++;
+ }
+console.log(cont)
 
