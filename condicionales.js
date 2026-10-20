@@ -1,10 +1,12 @@
 const prompt = require("prompt-sync")();
 
-const edad = 19
-if (edad < 18){
- console.log("eres menos de edad")
-} else if (edad === 18){
- console.log("acabas de cumplir la mayopria de edad")
+const nota= 6
+if(nota <= 4){
+  console.log("suspenso")
+} else if (nota >= 5 && nota <= 6 ){
+  console.log("aprovado");
+} else if (nota >= 7 && nota >= 8){
+   console.log("notable");
 } else {
-    console.log("eres mayor de edad")
+  console.log("sobresaliente")
 }
