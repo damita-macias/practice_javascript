@@ -1,17 +1,10 @@
 const prompt = require("prompt-sync")();
 
+//variables 
 
+let nombre = "monchis"      //palabra clave, nombre que se le da a la variable, operador de asignaci
+let raza = "labrador"
+let color = "dorado"
 
-let primer_numero = Number(prompt("dame un numero : "));
-let segundo_numero = Number(prompt("dame otro numero: "));
-let operacion = prompt("¿que operacion quieres realizar (-, +, *, /): ");
-
-if (operacion === "+"){
-    console.log("resultado", primer_numero + segundo_numero)
-} else if (operacion === "-"){
-    console.log("resultado", primer_numero - segundo_numero)
-} else if (operacion === "*"){
-    console.log("resultado", primer_numero * segundo_numero)
-} else if (operacion === "/"){
-    console.log("resultado", primer_numero / segundo_numero)
-}
+let perro = ["monchis", "labrador", "dorado", "damarys", 2, ["deparacitacion", "rabia", "poliomelitis"]]
+ console.log(perro[5][2])
