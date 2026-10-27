@@ -17,3 +17,9 @@ if (edad >= 18) {
 } else {
   console.log("Eres menor de edad");
 }
+
+const Maxscore = 100;
+Maxscore = 100;
+
+let age = 30
+console.log(age)
