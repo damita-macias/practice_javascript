@@ -1,25 +1,11 @@
 const prompt = require("prompt-sync")();
 
-onst nota = 7;
+let cadena = "amores"
+console.log(cadena)
 
-if (nota >= 9) {
-  console.log("¡Sobresaliente!");
-} else if (nota >= 5) {
-  console.log("¡Estás aprobado!");
-} else {
-  console.log("Has suspendido.");
-}
+const cancion = "WMYB,One thing, Kiss you"
+console.log(cancion)
 
-let edad = 18;
-
-if (edad >= 18) {
-  console.log("Eres mayor de edad");
-} else {
-  console.log("Eres menor de edad");
-}
-
-const Maxscore = 100;
-Maxscore = 100;
-
-let age = 30
-console.log(age)
+const nombre = "damarys"
+const apellido = "macias"
+console.log(nombre, apellido)
