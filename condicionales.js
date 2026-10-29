@@ -21,3 +21,12 @@ console.log(resultado)
 
 string_nuevo = `Estoy estudiando ${estudio.toUpperCase()} por ${horas}`
 console.log(string_nuevo)
+
+//funciones 
+function sumar(a, b) {
+  return a + b;
+}
+
+const restar = function(a, b) {
+  return a - b;
+};
