@@ -30,3 +30,21 @@ function sumar(a, b) {
 const restar = function(a, b) {
   return a - b;
 };
+
+comentarios 
+
+ // comentarios de una linea
+ /* es5te sirve para hacer comentarios de mas de 
+ una linea, nheaseikwrgjhnç
+ krjfjjretfgoregjkgj */
+
+ //javascripts es un lenguaje tipado dinamico
+let error = 404;
+error = "no es" //el mlotor de javascripts determina automaticamente 
+
+
+// operador TypeOf
+
+let age = 24;
+console.log(typeof age)
+
