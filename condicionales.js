@@ -1,41 +1,30 @@
 const prompt = require("prompt-sync")();
 
-console.log("Hi there!");
+const fccSentence = "freeCodeCamp is a great place to learn web development.";
 
-const botName = "TeacherBot";
-const greeting = `My name is ${botName}`;
-console.log(greeting)
+console.log("Here are some examples of the includes() method:")
 
-const subject = "Javascript";
-const topic = "strings";
+const hasFreeCodeCamp = fccSentence.includes("freeCodeCamp");
+console.log(hasFreeCodeCamp)
 
-const sentences = `Today you will learn about ${topic} in ${subject}.`;
-console.log(sentences)
+console.log(`fccSentence.includes("freeCodeCamp") retunrs ${hasFreeCodeCamp} because the word "freeCodeCamp" is in the sentence.`)
 
-const strLenghtIntro = `Here is an example of using the lenght property on the word ${subject}.`;
-console.log(strLenghtIntro)
+const hasJavaScript = fccSentence.includes("JavaScript");
+console.log(`fccSentence.includes("JavaScript") retunrs ${hasJavaScript} because the word "JavaScript" is not in the sentence.`)
 
-const strLenght = subject.length;
-console.log(strLenght)
+const hasLowercaseFCC = fccSentence.includes("freecodec$amp");
+console.log(`fccSentence.includes("freecodecamp") retunrs ${hasLowercaseFCC} beacuse includes is case-sensitive.`)
 
-console.log(`Here is an example of using the lenght property on the word ${topic}.`);
-console.log(topic.length);
+const message = "Welcome in my heart"
+console.log("Here are some examples of the slice() method:")
 
-console.log(`Here is an example of accessing the first letter in the word ${subject}.`)
-console.log(subject[0])
+const platform = message.slice(11, 23);
+console.log(`The word "${platform}" was sliced from the message.`)
 
-console.log(`Here is an example of accessing the second letter in the word ${subject}.`)
-console.log(subject[1])
+const greetingWord = message.slice(0, 7);
+console.log(`The first word is "${greetingWord}".`)
 
-console.log(`Here is an example of accessing the last letter in the word ${subject}.`)
-const LastCharacter = subject[subject.length - 1]
-console.log(LastCharacter);
+const locales = message.slice(-1);
+console.log(`The ending punctation mark is a "${locales}"`)
 
-const LearningIsFunSentences = "Learning is fun. "
-console.log("Here are examples of finding the positions of substrings in the sentences.")
-
-console.log(LearningIsFunSentences.indexOf("Learning"));
-console.log(LearningIsFunSentences.indexOf("fun"));
-console.log(LearningIsFunSentences.indexOf("learning"));
-
-console.log("I hope you enjoyed learning today.")
+console.log("concluido");
