@@ -28,3 +28,4 @@ const locales = message.slice(-1);
 console.log(`The ending punctation mark is a "${locales}"`)
 
 console.log("concluido");
+...
