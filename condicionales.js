@@ -1,5 +1,31 @@
 const prompt = require("prompt-sync")();
 
+const titulo = "I love cats."
+console.log("Original String:")
+console.log(titulo)
+
+const replacedString = titulo.replace("cats", "dogs")
+console.log("After using the replace() method:")
+console.log(replacedString)
+
+const exampleSentence = "I love cats and cats are so much fun!"
+console.log("Original Sentence:")
+console.log(exampleSentence)
+
+const dogsOnlySentence = exampleSentence.replaceAll("cats", "dogs")
+console.log("Replacing all occurrences of cats with dogs.")
+console.log(dogsOnlySentence)
+
+const learningSentences = "I love learning!"
+console.log("Original learning sentence:")
+console.log(learningSentences)
+
+const repeatedLove = "love ".repeat(3).trimEnd()
+console.log(repeatedLove)
+
+const newSentence = `I ${repeatedLove} learning.`
+console.log(newSentence)const prompt = require("prompt-sync")();
+
 const fccSentence = "freeCodeCamp is a great place to learn web development.";
 
 console.log("Here are some examples of the includes() method:")
