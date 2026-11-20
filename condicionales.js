@@ -1,57 +1,32 @@
 const prompt = require("prompt-sync")();
 
-const titulo = "I love cats."
-console.log("Original String:")
-console.log(titulo)
+//Crear una variable que sea una altura y que sea para una feria "menores que 1.55 y mayores de 1.80 no pueden montarse a una atraccion"
+let niño = 1.80
+if (niño <= 1.55 || niño >= 1.80){
+    console.log("No puedes entrar")
+} else {
+    console.log("Puedes pasar")
+}
 
-const replacedString = titulo.replace("cats", "dogs")
-console.log("After using the replace() method:")
-console.log(replacedString)
+//Crear una talla de pie y mostrar esa y el resto de talla hasta la 62 y al fianl mostrar que hya no hay tallas
 
-const exampleSentence = "I love cats and cats are so much fun!"
-console.log("Original Sentence:")
-console.log(exampleSentence)
+for (let talla = 35; talla <= 62; talla += 1) {
+    console.log(`talla ${talla}`)
+}
+console.log("ya no hay mas tallas")
 
-const dogsOnlySentence = exampleSentence.replaceAll("cats", "dogs")
-console.log("Replacing all occurrences of cats with dogs.")
-console.log(dogsOnlySentence)
+//Crea una lista de colores y mjuestras uno a uno
 
-const learningSentences = "I love learning!"
-console.log("Original learning sentence:")
-console.log(learningSentences)
+let colores = ["amarillo", "verde", "rosado", "celeste", "blanco"]
+for (let color of colores){
+    console.log(`disponible ${color}`)
+}
 
-const repeatedLove = "love ".repeat(3).trimEnd()
-console.log(repeatedLove)
+//Crea una lista de estudiantes sin repetir la a
 
-const newSentence = `I ${repeatedLove} learning.`
-console.log(newSentence)const prompt = require("prompt-sync")();
-
-const fccSentence = "freeCodeCamp is a great place to learn web development.";
-
-console.log("Here are some examples of the includes() method:")
-
-const hasFreeCodeCamp = fccSentence.includes("freeCodeCamp");
-console.log(hasFreeCodeCamp)
-
-console.log(`fccSentence.includes("freeCodeCamp") retunrs ${hasFreeCodeCamp} because the word "freeCodeCamp" is in the sentence.`)
-
-const hasJavaScript = fccSentence.includes("JavaScript");
-console.log(`fccSentence.includes("JavaScript") retunrs ${hasJavaScript} because the word "JavaScript" is not in the sentence.`)
-
-const hasLowercaseFCC = fccSentence.includes("freecodec$amp");
-console.log(`fccSentence.includes("freecodecamp") retunrs ${hasLowercaseFCC} beacuse includes is case-sensitive.`)
-
-const message = "Welcome in my heart"
-console.log("Here are some examples of the slice() method:")
-
-const platform = message.slice(11, 23);
-console.log(`The word "${platform}" was sliced from the message.`)
-
-const greetingWord = message.slice(0, 7);
-console.log(`The first word is "${greetingWord}".`)
-
-const locales = message.slice(-1);
-console.log(`The ending punctation mark is a "${locales}"`)
-
-console.log("concluido");
-...
+let estudiantes = ["ana", "mateo", "jose", "antonio", "elizabeth", "eros"]
+for (let nombre of estudiantes) {
+   if (nombre.startsWith("a") == false) {
+        console.log(nombre)
+   }
+} 
