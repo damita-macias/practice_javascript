@@ -41,3 +41,31 @@ console.log(res)
 
 // lista de notas de un alumno y sus notas, añadir nota, eliminar notas, decir las notas y dame la media 
 
+let notas = [10, 6, 9, 5, 6.5]
+
+ function mostrar_notas(notas) {
+    console.log(notas)
+ }
+
+ function añadir_nota(notas, nueva_nota ){
+    notas.push(nueva_nota)
+    console.log(nueva_nota)
+ }
+
+ function eliminar_nota(notas) {
+    notas.pop()
+ }
+
+ function suma_total(notas) {
+    let total = 0
+    for (let numero of notas){
+        total += numero
+    }
+    return total / notas.length
+ }   
+
+
+mostrar_notas(notas)
+eliminar_nota(notas)
+console.log(suma_total(notas))
+
