@@ -1,71 +1,27 @@
 const prompt = require("prompt-sync")();
 
-// Funciones
- 
- function nuevo(nombre){
-    return nombre.toUpperCase()
- }
+// construir un formateador de cadenas 
 
- let mayu = nuevo("orion")
- console.log(mayu)
+const mensaje = "   Bienvenidos   "
+console.log("Mensaje Original:") 
+console.log("lo mas original")
 
- //calculadora
+const arreglado = mensaje.trim();
+console.log("Aqui va el mensaje original con el metodo trim:")
+console.log(arreglado)
 
-function resta (n1, n2){
-    return n1 - n2
-}
+const espacio_blanco = mensaje.trimStart();
+console.log("aqui esta el nuevo resultado con el metodo timStart:")
+console.log(espacio_blanco)
 
-function multiplicacion (n1, n2) {
-    return n1 * n2
-}
- let resultado = resta(78, 24)
- resultado = multiplicacion(25, 2)
-console.log(resultado)
+const mayuscu = mensaje.toUpperCase();
+console.log("resultado en mayuscula con el metodo toUpperCase()")
+console.log(mayuscu)
 
+const minuscula = mensaje.toLowerCase()
+console.log("Resultado en minuscula con el metodo toLowerCase()");
+console.log(minuscula)
 
-function calculadora(N1, operacion, N2) {
-    if (operacion == "-") {
-        resultado = N1 - N2
-    } else if (operacion == "+") {
-        resultado = N1 + N2  
-    } else if (operacion == "x") {
-        resultado = N1 * N2
-    } else if (operacion == "/") {
-        resultado = N1 / N2
-    }
-    return resultado
-}
-
-let res = calculadora(7, "/", 5)
-console.log(res)
-
-// lista de notas de un alumno y sus notas, añadir nota, eliminar notas, decir las notas y dame la media 
-
-let notas = [10, 6, 9, 5, 6.5]
-
- function mostrar_notas(notas) {
-    console.log(notas)
- }
-
- function añadir_nota(notas, nueva_nota ){
-    notas.push(nueva_nota)
-    console.log(nueva_nota)
- }
-
- function eliminar_nota(notas) {
-    notas.pop()
- }
-
- function suma_total(notas) {
-    let total = 0
-    for (let numero of notas){
-        total += numero
-    }
-    return total / notas.length
- }   
-
-
-mostrar_notas(notas)
-eliminar_nota(notas)
-console.log(suma_total(notas))
-
+const nuevo_mensaj = mensaje.slice(0, 5);
+console.log("nuevo metodo slice:")
+console.log(nuevo_mensaj)
